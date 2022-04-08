@@ -21,8 +21,8 @@
                 <td class="border">{{$client->number}}</td>
                 <td class="border">{{$client->address}}</td>
                 <td class="border">{{$client->brand_auto}}</td>
-                <td class="border"><a href="{{route('update' , $client->id)}}"><img src="https://i.ya-webdesign.com/images/transparent-check-pencil-3.png" alt="Изменить"></a></td>
-                <td class="border"><a href="{{route('delete', $client->id)}}"><img src="https://cs6.pikabu.ru/avatars/333/v333729-1435704033.jpg" alt="Удалить"></a></td>
+                <td class="border"><a href="{{route('update' , $client->id)}}"><img src="{{asset('/image/update.png')}}" alt="Изменить"></a></td>
+                <td class="border"><a href="{{route('delete', $client->id)}}"><img src="{{asset('/image/delete.png')}}" alt="Удалить"></a></td>
             </tr>
             @endforeach
         </table>
