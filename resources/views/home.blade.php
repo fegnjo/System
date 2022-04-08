@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Главная')
 @section('body')
-
     <div class="container">
         <table class="table border" >
             <tr>
@@ -13,7 +12,6 @@
                 <th>Изменить</th>
                 <th>Удалить</th>
             </tr>
-
             @foreach($clients as $client)
             <tr>
                 <td class="border"><a class="text-decoration-none " href="{{route ('client', $client->id)}}">{{$client->name}}</a></td>
